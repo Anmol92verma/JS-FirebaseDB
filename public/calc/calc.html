@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Anmol Verma || Calculator</title>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="baseFirebase.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        html {
+            display: table;
+            margin: auto;
+        }
+        
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+            height: 50%;
+        }
+        
+        #some {
+            width: 50%;
+            background: goldenrod;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="some">
+        <input style="text-align:right;align-self: center" type="text" name="mainField" id="mainField">
+
+        <table>
+
+            <tr style="border: 1; text-align: center">
+                <td>
+                    <button id="1" onclick="onClick(this.id)" style="font-size: 20" value="1">1</button>
+                </td>
+                <td>
+                    <button id="2" onclick="onClick(this.id)" style="font-size: 20" value="2">2</button>
+                </td>
+                <td>
+                    <button id="3" onclick="onClick(this.id)" style="font-size: 20" value="3">3</button>
+                </td>
+                <td>
+                    <button id="+" onclick="onClick(this.id)" style="font-size: 20" value="+">+</button>
+                </td>
+            </tr>
+
+            <tr style="border: 1; text-align: center">
+                <td>
+                    <button id="4" onclick="onClick(this.id)" style="font-size: 20" value="4">4</button>
+                </td>
+                <td>
+                    <button id="5" onclick="onClick(this.id)" style="font-size: 20" value="5">5</button>
+                </td>
+                <td>
+                    <button id="6" onclick="onClick(this.id)" style="font-size: 20" value="6">6</button>
+                </td>
+                <td>
+                    <button id="-" onclick="onClick(this.id)" style="font-size: 20" value="-">-</button>
+                </td>
+            </tr>
+
+            <tr style="border: 1; text-align: center">
+                <td>
+                    <button id="7" onclick="onClick(this.id)" style="font-size: 20" value="7">7</button>
+                </td>
+                <td>
+                    <button id="8" onclick="onClick(this.id)" style="font-size: 20" value="8">8</button>
+                </td>
+                <td>
+                    <button id="9" onclick="onClick(this.id)" style="font-size: 20" value="9">9</button>
+                </td>
+                <td>
+                    <button id="*" onclick="onClick(this.id)" style="font-size: 20" value="*">*</button>
+                </td>
+            </tr>
+
+            <tr style="border: 1; text-align: center">
+                <td>
+                    <button id="." onclick="onClick(this.id)" style="font-size: 20" value=".">.</button>
+                </td>
+                <td>
+                    <button id="0" onclick="onClick(this.id)" style="font-size: 20" value="0">0</button>
+                </td>
+                <td>
+                    <button id="=" onclick="onClick(this.id)" style="font-size: 20" value="=">=</button>
+                </td>
+                <td>
+                    <button id="/" onclick="onClick(this.id)" style="font-size: 20" value="/">/</button>
+                </td>
+            </tr>
+
+        </table>
+
+        <button id="Clear" onclick="onClick(this.id)" style="font-size: 20" value="clear_task">Clear</button>
+    </div>
+</body>
+
+</html>

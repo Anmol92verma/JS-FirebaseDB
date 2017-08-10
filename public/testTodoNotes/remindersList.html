@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Firebase Database Quickstart</title>
+    <!-- Import and configure the Firebase SDK -->
+    <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+    <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+    <script src="/__/firebase/3.9.0/firebase-app.js"></script>
+    <script src="/__/firebase/3.9.0/firebase-auth.js"></script>
+    <script src="/__/firebase/3.9.0/firebase-database.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="listreminders.js"></script>
+    <link rel="stylesheet" href="material.css">
+</head>
+
+
+<body>
+    <div class="materialContainer">
+        <div class="box">
+
+            <div class="title">My Reminders</div>
+
+            <div id="listReminders">
+
+            </div>
+
+            <div id="createNew" class="overbox">
+                <div onclick="createNew()" class="material-button alt-2"><span class="shape"></span></div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
